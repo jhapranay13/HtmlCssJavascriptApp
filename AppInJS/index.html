@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Knowledge Warehouse
+        </title>
+        <link rel="stylesheet" href="stylesheet/global_style.css"/>
+        <link rel="stylesheet" href="stylesheet/login_style.css">
+        <link rel="stylesheet" href="stylesheet/signup-style.css">
+        <link rel="stylesheet" href="stylesheet/main-header-component.css">
+        <link rel="stylesheet" href="stylesheet/confirm.css">
+        <link rel="stylesheet" href="stylesheet/menubar.css">
+        <link rel="stylesheet" href="stylesheet/portal.css">
+        <link rel="stylesheet" href="stylesheet/user-admin.css">
+        <link rel="stylesheet" href="stylesheet/video_pane.css">
+        <link rel="stylesheet" href="stylesheet/video-mgmt.css">
+        <link rel="stylesheet" href="stylesheet/selected-video.css">
+
+        <script defer src="script/components.js"></script>
+        <script defer src="script/data.js"></script>
+        <script defer src="script/login-page.js"></script>
+        <script defer src="script/signup-page.js"></script>
+        <script defer src="script/general-info.js"></script>
+        <script defer src="script/main-header-component.js"></script>
+        <script defer src="script/confirm.js"></script>
+        <script defer src="script/menubar.js"></script>
+        <script defer src="script/user-admin.js"></script>
+        <script defer src="script/available-video.js"></script>
+        <script defer src="script/video-mgmt.js"></script>
+        <script defer src="script/selected-video.js"></script>
+
+    </head>
+    <body class="background-cover-grey">
+        <div class="cloak hidden">
+        </div>
+        <div class="confirm-component hidden">
+            <div class="confirm-container">
+                <div class="confirm-img-container">
+                    <img class="confirm-img" src="images/confirm.webp"/>
+                </div> 
+                <div class="confirm-text-container">   
+                    <p class="confirmation-text"></p>
+                    <div class="ok-cancel-btn-tab">
+                        <input type="button" class="confirmation-ok" value="Ok"/>
+                        <input type="button" class="confirmation-cancel" value="Cancel"/>
+                    </div>    
+                </div>    
+            </div>
+        </div>
+
+        <div class = "login background-cover-white">
+            <form action="" class="login-form">
+                <div class="avatar-container">
+                    <img class="avatar-pic" src="images/avatar.jpg" />
+                </div>
+                <p class="login-uname-error hidden">* Error in User Name or password</p>
+                <label for="uname">Username:</label>
+                <input type = "text" id="uname" class="login-userid" placeholder="Username"/>
+                <label for="pwd">Password:</label>
+                <input type = "password" id ="pwd" class="login-password" placeholder="Password"/>
+                <input type = "checkbox" tabindex="-1" class="show-pwd-checkbox" data-for-pwd="login-password"/>
+                <input type="button" class="login-button" value="Login" disabled/>
+            </form>
+            <div class="new-user-link-container"><div></div><a class="signup-link">Click to signup</a><div></div></div>
+        </div> 
+
+        <div class="signup hidden">
+            <div class="signup-contianer center-justify">
+                <p class="signup-header">Sign Up</p>
+                <div class="continer-x"><p id="signup-close" class="text-x">X<p></div>
+                <div class="error-container">
+                    <p class="error-message hidden" id="superr1">* Username should be greater than 3 characters</p>
+                    <p class="error-message hidden" id="superr2">* Password and confirm password do not match</p>
+                    <p class="error-message hidden" id="superr3">* Password is less than 6 characters</p>
+                    <p class="error-message hidden" id="superr4">* Password should contain one capital alphabet</p>
+                    <p class="error-message hidden" id="superr5">* Password should contain one small alphabet</p>
+                    <p class="error-message hidden" id="superr6">* Password should contain one special character</p>
+                    <p class="error-message hidden" id="superr7">* Username already exists.</p>
+                    <p class="error-message hidden" id="superr8">* Password does not contain a numeric value.</p>
+                </div>
+                
+                <form action="" id="signup-form">
+                    <div class="center-justify">
+                        <label for="cuname">Enter Username:</label>
+                        <input type = "text" id="cuname" class="choosen-userid" placeholder="Enter Username"/>
+                    </div>
+                    <div class="center-justify choosen-role">
+                        <label for="role-drp">Select User Role:</label>
+                        <select id="role-drp" class="signup-select">
+                            <option value="premium">Premium</option>
+                            <option value="normal" selected>Normal</option>
+                        </select>
+                    </div>
+                    <div class="center-justify">
+                        <label for="entered-pwd">Enter Password:</label>
+                        <input type = "password" id="entered-pwd" class="choosen-pwd" placeholder="Enter Password"/>
+                        <input type = "checkbox" tabindex="-1" class="show-pwd-checkbox" data-for-pwd="choosen-pwd"/>
+                    </div>
+                    <div class="center-justify">
+                        <label for="entered-pwd1">Confirm Password:</label>
+                        <input type = "password" id="entered-pwd1" class="choosen-pwd1" placeholder="Confirm Password"/>
+                        <input type = "checkbox" tabindex="-1" class="show-pwd-checkbox" data-for-pwd="choosen-pwd1"/>
+                    </div>
+                    <div class="center-justify">
+                        <input type = "button" class="signup-save" value="Save" disabled/>
+                    </div>
+                    <div class="center-justify">
+                        <input type = "button" class="signup-cancel" value="Cancel"/>
+                    </div>
+                </form>
+            </div> 
+        </div>
+
+        <div class="ginfo hidden">
+            <div class="general-info">
+                <div class="info-img-container">
+                    <img class='info-img' src="images/info.jpg"/>
+                </div>
+                <div class="info-text-btn-container">
+                    <div class="continer-x"><p id="general-info-close" class="text-x">X<p></div>
+
+                    <div class="info-text-container">
+                        <p class="info-text"></p>
+                    </div>
+                    <div class="info_ok-contianer">
+                        <input type="button" class="info-ok-btn" value="ok">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-successfull hidden">
+            <div class="main-header">
+                <div class="main-header-container">
+                    <div class="company-img">
+                        <img class="company-logo" src="images/company-logo.jpg"/>
+                    </div>
+                    <div class="system-name">
+                        <p class="system-id">Javascript Experiment Warehouse</p>
+                    </div>
+                    <div class="profile-img-logout">
+                        <img class="profile-img" src="images/profile-pic.avif"/>
+                        <img class="logout-img" src="images/logout.png"/>
+                    </div>
+                </div>
+            </div> 
+            <div class="menubar">
+                <div class="menubar-container">
+                    <div class="menubar-img-container">
+                        <img class="menubar-img" src="images/menubar-icon.png"/>
+                    </div>
+                    <div class="menu-holder">
+                    </div>
+                </div>    
+            </div> 
+            
+            <div class="portal">
+                <div class="admin-component hidden">
+                    <div class="admin-container">
+                        <div class="admin-header-container">
+                            <button class="admin-header">User Account Management</button>
+                        </div>
+                        <div class="user-table-component hidden">
+                            <div class="user_table-search-container">
+                                <div class="search-continaer">
+                                    <input class="search-text" type="text" placeholder="Search User Name"/>  
+                                    <div class="user-table-operation">              
+                                        <img class="op-img" id="user-trash-img" src="images/trash.png"/>
+                                        <img class="op-img" id="user-save-img" src="images/save-icon.png"/>
+                                    </div>
+                                </div>
+                                <div class="user-table-container">
+                                    <table class="user-table">
+                                        <tr>
+                                            <th>
+                                                User Name
+                                            </th>
+                                            <th>
+                                                Password
+                                            </th>
+                                            <th>
+                                                Roles
+                                            </th>
+                                            <th>
+                                                Edit/Select
+                                            </th>
+                                        </tr>
+                                        <tbody class="user-record-container">
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="user-table-controls">
+                                    <div class="recods-per-page-container"> 
+                                        <label class="-number-rcds-lbl">Number of records per page:</label>
+                                        <select class="records-per-page" name="record per page">
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="75">75</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                    </div>    
+                                    <div class="page-num-lbl-container">
+                                        <label class="page-number-lbl">Jump to Page:</label>
+                                        <div class="page-number-container">
+                                            <select class="page-number"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-admin-container">
+                        <div class="book-header-container">
+                            <button class="book-header">Book Management</button>
+                        </div>
+                        <div class="book-management-companent hidden">
+                            Book Management body
+                        </div>
+                    </div>
+                    <div class="video-admin-container">
+                        <div class="video-header-container">
+                            <button class="video-header">Video Management</button>
+                        </div>
+                        <div class="video-management-companent hidden">
+                            Video Management body
+                        </div>
+                    </div>
+                </div>
+                <div class="video-component hidden">
+                    <div class="video-container-draw-area">  
+                        <div class="selected-video-container">
+                            <div class="selected-video-header-container">
+                                <div class="selected-video-counter">
+                                    0
+                                </div>
+                                <button class="selected-video-header">Selected Videos</button>
+                            </div>   
+                            <div class="selected-video-card-container hidden">
+                                <div class="selected-video-zero">
+                                    No Video Selected
+                                </div>
+                            </div> 
+                        </div> 
+                        <div class="available-video-container">
+                            <div class="available-video-header-container">
+                                <button class="available-video-header">Available Videos</button>
+                            </div>   
+                            <div class="available-video-card-container hidden">
+                                
+                            </div> 
+                        </div> 
+                    </div>   
+                </div>
+                <div class="book-component hidden">Book</div>
+                <div class="profile-component hidden">Profile</div>
+            </div>  
+        <div> 
+    </body>    
+</html>
