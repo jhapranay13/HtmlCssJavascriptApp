@@ -19,8 +19,7 @@ const drawAvailableVideoCards = () => {
         const vidAge = videoData.videoAge;
         const  duration = videoData.videoduration;
         const videoNames = selectedVidUser.get(currLoggedInUser.userName);
-        console.log(currLoggedInUser);
-        console.log(videoNames);
+       
 
         if (videoNames && videoNames.has(vidName)) {
             continue;
@@ -81,7 +80,6 @@ availableVideoCardContainer.addEventListener('click', (event) => {
         selectedVidUser.set(currLoggedInUser.userName, videoSet);
     }
     videoSet.add(selectedVideo.videoName);
-    console.log(videoSet);
     drawAvailableVideoCards();
     drawSelectedVideoCount();
     drawSelectedVideoContainer();

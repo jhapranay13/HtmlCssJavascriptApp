@@ -15,4 +15,4 @@ generalInfoClose.addEventListener('click', (event) => {
 const setGeneralInfoVisibleAndText = function() {
     generalInfo.classList.remove('hidden');
     generalInfoText.textContent = generalInfoTextMessage;
-}
+};

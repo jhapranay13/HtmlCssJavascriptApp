@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="stylesheet/portal.css">
         <link rel="stylesheet" href="stylesheet/user-admin.css">
         <link rel="stylesheet" href="stylesheet/video_pane.css">
-        <link rel="stylesheet" href="stylesheet/video-mgmt.css">
         <link rel="stylesheet" href="stylesheet/selected-video.css">
+        <link rel="stylesheet" href="stylesheet/profile-management.css">
 
         <script defer src="script/components.js"></script>
         <script defer src="script/data.js"></script>
@@ -26,8 +26,8 @@
         <script defer src="script/menubar.js"></script>
         <script defer src="script/user-admin.js"></script>
         <script defer src="script/available-video.js"></script>
-        <script defer src="script/video-mgmt.js"></script>
         <script defer src="script/selected-video.js"></script>
+        <script defer src="script/profile-management.js"></script>
 
     </head>
     <body class="background-cover-grey">
@@ -212,22 +212,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="book-admin-container">
-                        <div class="book-header-container">
-                            <button class="book-header">Book Management</button>
-                        </div>
-                        <div class="book-management-companent hidden">
-                            Book Management body
-                        </div>
-                    </div>
-                    <div class="video-admin-container">
-                        <div class="video-header-container">
-                            <button class="video-header">Video Management</button>
-                        </div>
-                        <div class="video-management-companent hidden">
-                            Video Management body
-                        </div>
-                    </div>
                 </div>
                 <div class="video-component hidden">
                     <div class="video-container-draw-area">  
@@ -255,7 +239,89 @@
                     </div>   
                 </div>
                 <div class="book-component hidden">Book</div>
-                <div class="profile-component hidden">Profile</div>
+                <div class="profile-component hidden">
+                    <div class="profile-management-draw-area">
+                        <div class="profile-mgmt-container">
+                            <p class="profile-mgmt-header">PROFILE MANAGEMENT</p>
+                        </div>
+                        <form class="profile-mgmt-form" enctype="multipart/form-data" action="">
+                            <div class="grid-layout-form">
+                                <div>
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName"></input>
+                                </div>
+                                <div>
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName"></input>
+                                </div>
+                                <div class="span-column-two">
+                                    <label for="addressLine1">Address Line 1:</label>
+                                    <input type="text" id="addressLine1" name="addressLine1"></input>
+                                </div>    
+                                <div class="span-column-two">
+                                    <label for="addressLine2">Address Line 2:</label>
+                                    <input type="text" id="addressLine2" name="addressLine2"></input>
+                                </div> 
+                                <div>
+                                    <label for="city">City:</label>
+                                    <input type="text" id="city" name="city"></input>
+                                </div>
+                                <div>
+                                    <label for="zipCode">Zip Code:</label>
+                                    <input type="text" id="zipCode" name="zipCode"></input>
+                                </div>
+                                <div>
+                                    <label for="state">State:</label>
+                                    <input type="text" id="state" name="state"></input>
+                                </div>
+                                <div>
+                                    <label for="country">Country:</label>
+                                    <input type="text" id="country" name="country"></input>
+                                </div>
+                            </div> 
+                            <div class="form-save-reset">
+                                <input type="submit" value="Save" class="form-button-style form-save"/>
+                                <input type="reset" value="Reset" class="form-button-style"/>
+                            </div> 
+                        </form>
+                        <form class="billing-mgmt-form hidden" enctype="multipart/form-data" action="">    
+                            <div class="grid-layout-form">
+                                <div>
+                                    <label for="billingChk">Use Home Address as Billing Address</label>
+                                    <input type="checkbox" name="billingChk" id="billingChk"/>
+                                </div>
+                                <div class="span-column-two">
+                                    <label for="billingAddressLine1">Address Line 1:</label>
+                                    <input type="text" id="billingAddressLine1" name="billingAddressLine1"></input>
+                                </div>    
+                                <div class="span-column-two">
+                                    <label for="billingAddressLine2">Address Line 2:</label>
+                                    <input type="text" id="billingAddressLine2" name="billingAddressLine2"></input>
+                                </div> 
+                                <div>
+                                    <label for="billingCity">City:</label>
+                                    <input type="text" id="billingCity" name="billingCity"></input>
+                                </div>
+                                <div>
+                                    <label for="billingZipCode">Zip Code:</label>
+                                    <input type="text" id="billingZipCode" name="billingZipCode"></input>
+                                </div>
+                                <div>
+                                    <label for="billingState">State:</label>
+                                    <input type="text" id="billingState" name="billingState"></input>
+                                </div>
+                                <div>
+                                    <label for="billingCountry">Country:</label>
+                                    <input type="text" id="billingCountry" name="billingCountry"></input>
+                                </div>
+                            </div> 
+                            <div class="form-save-reset">
+                                <input type="submit" value="Save" class="form-button-style form-save"/>
+                                <input type="reset" value="Reset" class="form-button-style"/>
+                            </div>       
+                        </form>
+                    </div>
+                </div>
             </div>  
         <div> 
     </body>    

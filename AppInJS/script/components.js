@@ -91,13 +91,15 @@ const availableVideoContainer = document.querySelector('.available-video-contain
 const availableVideoHeader = availableVideoContainer.querySelector('.available-video-header');
 const availableVideoCardContainer = availableVideoContainer.querySelector('.available-video-card-container');
 
-const videoAdminContainer = document.querySelector('.video-admin-container');
-const videoHeader = videoAdminContainer.querySelector('.video-header');
-const videoMgmtComponent = videoAdminContainer.querySelector('.video-management-companent');
-
 const selectedVidContainer = document.querySelector('.selected-video-container');
 const selectedVidCounter = selectedVidContainer.querySelector('.selected-video-counter');
 const selectedVidHeader = selectedVidContainer.querySelector('.selected-video-header');
 const selectedVidCrdContainer = selectedVidContainer.querySelector('.selected-video-card-container');
 const selectedVidZero = selectedVidCrdContainer.querySelector('.selected-video-zero');
 
+const profileManagementDrawArea = selectedVidCrdContainer.querySelector('.profile-management-draw-area');
+
+const profileMgmtForm = document.querySelector('.profile-mgmt-form');
+const formSaveBtn = document.querySelector('.form-save');
+const billingMgmtFormHidden = document.querySelector('.billing-mgmt-form');
+const billingChk = document.querySelector('#billingChk');
