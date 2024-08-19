@@ -5,6 +5,11 @@ selectedVidHeader.addEventListener('click', (event) => {
 });
 
 selectedVidCrdContainer.addEventListener('click', (event) => {
+    const selectedSet = selectedVidUser.get(currLoggedInUser.userName);
+
+    if (!selectedSet || !selectedSet.size) {
+        return;
+    }
     const videoName = event.target.dataset.videoName;
     confirmTextMessage = `Are you sure you want to remove this video?`
     confirmFunctionToExecute = removeFromSelectedRedrawComponents;

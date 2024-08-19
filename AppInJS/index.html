@@ -5,17 +5,18 @@
             Knowledge Warehouse
         </title>
         <link rel="stylesheet" href="stylesheet/global_style.css"/>
-        <link rel="stylesheet" href="stylesheet/login_style.css">
-        <link rel="stylesheet" href="stylesheet/signup-style.css">
-        <link rel="stylesheet" href="stylesheet/main-header-component.css">
-        <link rel="stylesheet" href="stylesheet/confirm.css">
-        <link rel="stylesheet" href="stylesheet/menubar.css">
-        <link rel="stylesheet" href="stylesheet/portal.css">
-        <link rel="stylesheet" href="stylesheet/user-admin.css">
-        <link rel="stylesheet" href="stylesheet/video_pane.css">
-        <link rel="stylesheet" href="stylesheet/selected-video.css">
-        <link rel="stylesheet" href="stylesheet/profile-management.css">
-        <link rel="stylesheet" href="stylesheet/quiz-app.css">
+        <link rel="stylesheet" href="stylesheet/login_style.css"/>
+        <link rel="stylesheet" href="stylesheet/signup-style.css"/>
+        <link rel="stylesheet" href="stylesheet/main-header-component.css"/>
+        <link rel="stylesheet" href="stylesheet/confirm.css"/>
+        <link rel="stylesheet" href="stylesheet/menubar.css"/>
+        <link rel="stylesheet" href="stylesheet/portal.css"/>
+        <link rel="stylesheet" href="stylesheet/user-admin.css"/>
+        <link rel="stylesheet" href="stylesheet/video_pane.css"/>
+        <link rel="stylesheet" href="stylesheet/selected-video.css"/>
+        <link rel="stylesheet" href="stylesheet/profile-management.css"/>
+        <link rel="stylesheet" href="stylesheet/quiz-app.css"/>
+        <link rel="stylesheet" href="stylesheet/project-mgmt.css"/>
 
         <script defer src="script/components.js"></script>
         <script defer src="script/data.js"></script>
@@ -30,6 +31,7 @@
         <script defer src="script/selected-video.js"></script>
         <script defer src="script/profile-management.js"></script>
         <script defer src="script/quiz-app.js"></script>
+        <script defer src="script/project-mgmt.js"></script>
 
     </head>
     <body class="background-cover-grey">
@@ -89,6 +91,7 @@
                     <div class="center-justify choosen-role">
                         <label for="role-drp">Select User Role:</label>
                         <select id="role-drp" class="signup-select">
+                            <option value="admin" selected>Admin</option>
                             <option value="premium">Premium</option>
                             <option value="normal" selected>Normal</option>
                         </select>
@@ -244,7 +247,7 @@
                     <div class="quiz-container">
                         <div class="start-quiz">
                             <p class="start-quiz-text">Welcome To quiz app</p>
-                            <p class="start-quiz-subtext">You have 20 seconds to answer each question</p>
+                            <p class="start-quiz-subtext">You have 20 seconds to answer each question. Question and answers appear in random order.</p>
                             <button class="start-quiz-btn">Start Quiz</button>
                         </div>
                         <div class="quiz-ques-card hidden">
@@ -351,6 +354,9 @@
                         </form>
                     </div>
                 </div>
+                <div class="project-mgmt-component hidden">
+                    Project management Component
+                <div>
             </div>  
         <div> 
     </body>    

@@ -147,21 +147,23 @@ const currLoggedInUser = {};
 const selectedUsers = new Map();
 
 const roleMenuMap = new Map();
-roleMenuMap.set('admin', ['person-admin', 'video-library', 'quiz-app', 'manage-profile']);
-roleMenuMap.set('premium', ['video-library', 'quiz-app', 'manage-profile']);
-roleMenuMap.set('normal', ['quiz-app', 'manage-profile']);
+roleMenuMap.set('admin', ['person-admin', 'video-library', 'quiz-app', 'project-mgmt','manage-profile']);
+roleMenuMap.set('premium', ['video-library', 'quiz-app', 'project-mgmt', 'manage-profile']);
+roleMenuMap.set('normal', ['quiz-app', 'project-mgmt', 'manage-profile']);
 
 const menuComponentMap = new Map();
 menuComponentMap.set('person-admin', personAdminComponent);
 menuComponentMap.set('video-library', videoLibComponent);
 menuComponentMap.set('quiz-app', quizComponent);
 menuComponentMap.set('manage-profile', profileMgmtComponent);
+menuComponentMap.set('project-mgmt', projectManagementComponent);
 
 const menuTextMap = new Map();
 menuTextMap.set('person-admin', 'Administration');
 menuTextMap.set('video-library', 'Video Library');
 menuTextMap.set('quiz-app', 'Quiz App');
 menuTextMap.set('manage-profile', 'Profile Management');
+menuTextMap.set('project-mgmt', 'Project Management');
 
 const defaultUserAdminPageSize = 5;
 let currUserAdminPageSize = defaultUserAdminPageSize;

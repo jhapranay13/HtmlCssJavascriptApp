@@ -114,3 +114,5 @@ const profileMgmtForm = document.querySelector('.profile-mgmt-form');
 const formSaveBtn = document.querySelector('.form-save');
 const billingMgmtFormHidden = document.querySelector('.billing-mgmt-form');
 const billingChk = document.querySelector('#billingChk');
+
+const projectManagementComponent = document.querySelector('.project-mgmt-component');
