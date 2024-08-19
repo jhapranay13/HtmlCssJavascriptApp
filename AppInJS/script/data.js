@@ -114,6 +114,32 @@ let videoCardData = [{
     videoduration: "1:10:33" 
 }];
 
+const quizData = [{
+    ques: "Demo Question 1 So some random text just like that?",
+    ans: [
+        "Answer 1.",
+        "Answer 2 so making something else.",
+        "Answer 3 so making something else making it a bit longer.",
+        "4th time."
+    ]
+}, {
+    ques: "Demo Question 2 So some random text just like that. So lets see the timer run?",
+    ans: [
+        "Answer 1.",
+        "Answer 2 so making something else.",
+        "Answer 3 so making something else making it a bit longer.",
+        "4th time."
+    ]
+}, {
+    ques: "Demo Question 3 So lets see the timer run?",
+    ans: [
+        "Answer 1.",
+        "Answer 2 so making something else.",
+        "Answer 3 so making something else making it a bit longer.",
+        "4th time."
+    ]
+}];
+
 let selectedVidUser = new Map();
 
 const currLoggedInUser = {};
@@ -121,20 +147,20 @@ const currLoggedInUser = {};
 const selectedUsers = new Map();
 
 const roleMenuMap = new Map();
-roleMenuMap.set('admin', ['person-admin', 'video-library', 'book-library', 'manage-profile']);
-roleMenuMap.set('premium', ['video-library', 'book-library', 'manage-profile']);
-roleMenuMap.set('normal', ['book-library', 'manage-profile']);
+roleMenuMap.set('admin', ['person-admin', 'video-library', 'quiz-app', 'manage-profile']);
+roleMenuMap.set('premium', ['video-library', 'quiz-app', 'manage-profile']);
+roleMenuMap.set('normal', ['quiz-app', 'manage-profile']);
 
 const menuComponentMap = new Map();
 menuComponentMap.set('person-admin', personAdminComponent);
 menuComponentMap.set('video-library', videoLibComponent);
-menuComponentMap.set('book-library', bookLibComponent);
+menuComponentMap.set('quiz-app', quizComponent);
 menuComponentMap.set('manage-profile', profileMgmtComponent);
 
 const menuTextMap = new Map();
 menuTextMap.set('person-admin', 'Administration');
 menuTextMap.set('video-library', 'Video Library');
-menuTextMap.set('book-library', 'Book Library');
+menuTextMap.set('quiz-app', 'Quiz App');
 menuTextMap.set('manage-profile', 'Profile Management');
 
 const defaultUserAdminPageSize = 5;

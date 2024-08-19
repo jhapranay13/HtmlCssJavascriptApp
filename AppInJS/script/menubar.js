@@ -28,6 +28,11 @@ const drawMenu = function() {
                 drawAvailableVideoCards();
             }
 
+            if (event.target.dataset.componentAssoc === 'quiz-app') {
+                endQuiz.classList.add('hidden');
+                startQuizCard.classList.remove('hidden');
+            }
+
             if (currComponent) {
                 currComponent.classList.add('hidden');
             }

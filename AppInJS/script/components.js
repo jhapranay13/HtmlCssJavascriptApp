@@ -68,7 +68,18 @@ const menuBarContainer = document.querySelector('.menu-holder');
 
 const personAdminComponent = document.querySelector('.admin-component');
 const videoLibComponent = document.querySelector('.video-component');
-const bookLibComponent = document.querySelector('.book-component');
+const quizComponent = document.querySelector('.quiz-component');
+const quizContainer = quizComponent.querySelector('.quiz-container');
+const startQuizCard = quizComponent.querySelector('.start-quiz');
+const quizStartBtn = quizContainer.querySelector('.start-quiz-btn');
+const quiztimerContainer = quizContainer.querySelector('.quiz-timer-container');
+const quizQuesContainer = quizContainer.querySelector('.quiz-ques-container')
+const quizQuesCard = quizComponent.querySelector('.quiz-ques-card');
+const quizQuestion = quizComponent.querySelector('.quiz-question');
+const quizAnswer = quizComponent.querySelector('.quiz-answer');
+const quiztimerLine = quizContainer.querySelector('.quiz-timer-line');
+const endQuiz = quizContainer.querySelector('.end-quiz');
+
 const profileMgmtComponent = document.querySelector('.profile-component');
 let currComponent = null;
 

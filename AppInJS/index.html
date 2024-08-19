@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="stylesheet/video_pane.css">
         <link rel="stylesheet" href="stylesheet/selected-video.css">
         <link rel="stylesheet" href="stylesheet/profile-management.css">
+        <link rel="stylesheet" href="stylesheet/quiz-app.css">
 
         <script defer src="script/components.js"></script>
         <script defer src="script/data.js"></script>
@@ -28,6 +29,7 @@
         <script defer src="script/available-video.js"></script>
         <script defer src="script/selected-video.js"></script>
         <script defer src="script/profile-management.js"></script>
+        <script defer src="script/quiz-app.js"></script>
 
     </head>
     <body class="background-cover-grey">
@@ -238,7 +240,34 @@
                         </div> 
                     </div>   
                 </div>
-                <div class="book-component hidden">Book</div>
+                <div class="quiz-component hidden">
+                    <div class="quiz-container">
+                        <div class="start-quiz">
+                            <p class="start-quiz-text">Welcome To quiz app</p>
+                            <p class="start-quiz-subtext">You have 20 seconds to answer each question</p>
+                            <button class="start-quiz-btn">Start Quiz</button>
+                        </div>
+                        <div class="quiz-ques-card hidden">
+                            <div class="quiz-question">
+                                <div class="quiz-timer-container">
+                                    <div class="quiz-timer-line"></div>
+                                </div>
+                                <div class="quiz-ques-container">
+                                    This is kind of a question
+                                </div>
+                            </div>
+                            <div class="quiz-answer">
+                                <div class="quiz-answer-btn" id="ques-1-ans-2">
+                                    This is kind of an answer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="end-quiz hidden">
+                            <p class="end-quiz-text">Congratulation, You are done with the quiz!!</p>
+                            
+                        </div>
+                    </div>
+                </div>
                 <div class="profile-component hidden">
                     <div class="profile-management-draw-area">
                         <div class="profile-mgmt-container">
