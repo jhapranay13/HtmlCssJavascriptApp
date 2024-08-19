@@ -1,9 +1,6 @@
 profileMgmtForm.addEventListener('submit', (event) => {
     const data = new FormData(profileMgmtForm);
-    for (const entry of data) {
-        console.log("Inside", entry[0], entry[1]);
-    }
-    console.log(data);
+    
 
     for (const userInfo of userInfos) {
 
@@ -24,11 +21,8 @@ profileMgmtForm.addEventListener('submit', (event) => {
 });
 
 profileMgmtForm.addEventListener("formdata", (e) => {
-    console.log("formdata fired");
     const data = e.formData;
-    for (const value of data.values()) {
-      console.log(value);
-    }
+    
   });
 
 billingChk.addEventListener("change", (event) => {
@@ -60,10 +54,7 @@ billingChk.addEventListener("change", (event) => {
 
 billingMgmtFormHidden.addEventListener('submit', (event) => {
     const data = new FormData(profileMgmtForm);
-    for (const entry of data) {
-        console.log("Inside", entry[0], entry[1]);
-    }
-    console.log(data);
+   
 
     for (const userInfo of userInfos) {
 

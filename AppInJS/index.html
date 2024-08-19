@@ -141,7 +141,7 @@
                         <img class="company-logo" src="images/company-logo.jpg"/>
                     </div>
                     <div class="system-name">
-                        <p class="system-id">Javascript Experiment Warehouse</p>
+                        <p class="system-id">Javascript Experiment</p>
                     </div>
                     <div class="profile-img-logout">
                         <img class="profile-img" src="images/profile-pic.avif"/>
@@ -355,8 +355,97 @@
                     </div>
                 </div>
                 <div class="project-mgmt-component hidden">
-                    Project management Component
-                <div>
+                    <div class="project-mgmt-sidebar">
+                        <div class="project-mgmt-create-btn-container">
+                            <button class="create-project-btn" value="Create Project">Create Project</button>
+                            <ul class="project-container">
+                                
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="project_magmt-main-area">
+                        <div class="project-mgmt-create-btn-container2">
+                            <p>No Project selected. Select a project or create a new one. The Focus is not ion styling or validation but on data sharing across components</p>
+                            <button class="create-project-btn" value="Create Project">Create Project</button>
+                        </div>
+
+                        <div class="project-mgmt-project-detail-container hidden">
+                            <form class="create_proj_form" method="">
+                                <div class="proj-name-container">
+                                    <label for="proj_name">Project Name:</label>
+                                    <input type="text" id="proj_name" name="proj_name" class="proj_name"/>
+                                </div>
+                                <div class="proj-desc-container">
+                                    <label for="proj_desc">Project Description:</label>
+                                    <textarea rows="4" cols="50" id="proj_desc" name="proj_desc" class="proj_desc" nowrap></textarea>
+                                </div>
+                                <div class="proj-date-container">
+                                    <label for="proj_date">Due date:</label>
+                                    <input type="date" id="proj_date" name="proj_date" class="proj_date"/>
+                                </div>
+                                <div class="proj-form-ctrl">
+                                    <input type="submit" class="proj_mgmt_save" value="Save"/>
+                                    <input type="reset" class="proj_mgmt_reset" value="Reset"/>
+                                </div>
+                            </form>
+                        </div> 
+
+                        <div class="project-mgmt-project-task-container hidden">
+                            <form class="create_task_form" method="">
+                                <div class="task-name-container">
+                                    <label for="task_name">Task Name:</label>
+                                    <input type="text" id="task_name" name="task_name" class="task_name"/>
+                                </div>
+                                <div class="task-desc-container">
+                                    <label for="task_desc">Task Description:</label>
+                                    <textarea rows="4" cols="50" id="task_desc" name="task_desc" class="task_desc"></textarea>
+                                </div>
+                                <div class="proj-form-ctrl">
+                                    <input type="submit" class="proj_mgmt_save" value="Save"/>
+                                    <input type="reset" class="proj_mgmt_reset" value="Reset"/>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="selected-project-detail-container hidden">
+                            <div class="project-detail-display">
+                                <div class="proj-name-display">
+                                    <p class="proj-name-lbl">Project Name:</p>
+                                    <p class="proj-name-content"></p>
+                                </div>
+                                <div class="proj-desc-display">
+                                    <p class="proj-desc-lbl">Project Description:</p>
+                                    <p class="proj-desc-content"></p>
+                                </div>
+                                <div class="proj-delete-display">
+                                    <button class="delete-proj-btn">Delete Project</button>
+                                </div>
+                            </div>
+                            <div class="project-task-detail-display">
+                                <div class="create-task-display">
+                                    <button class="create-task-btn">Create Task</button>
+                                </div>
+                                <div class="task-desc-display">
+                                    <ul class="task-display-holder">
+                                        <li>
+                                            <div class="task-dtls-container">
+                                                <div class="task-name">
+                                                    Some name
+                                                </div>
+                                                <div class="task-desc">
+                                                    Some desc
+                                                </div>
+                                                <div class="task-remove">
+                                                    <button class="remove-task-btn">Delete Task</button>
+                                                </div>
+                                            </div>  
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>  
+                </div>
             </div>  
         <div> 
     </body>    

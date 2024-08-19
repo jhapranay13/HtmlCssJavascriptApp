@@ -100,15 +100,18 @@ const userSave = adminComponent.querySelector('#user-save-img');
 
 const availableVideoContainer = document.querySelector('.available-video-container');
 const availableVideoHeader = availableVideoContainer.querySelector('.available-video-header');
-const availableVideoCardContainer = availableVideoContainer.querySelector('.available-video-card-container');
+const availableVideoCardContainer = 
+    availableVideoContainer.querySelector('.available-video-card-container');
 
 const selectedVidContainer = document.querySelector('.selected-video-container');
 const selectedVidCounter = selectedVidContainer.querySelector('.selected-video-counter');
 const selectedVidHeader = selectedVidContainer.querySelector('.selected-video-header');
-const selectedVidCrdContainer = selectedVidContainer.querySelector('.selected-video-card-container');
+const selectedVidCrdContainer = 
+    selectedVidContainer.querySelector('.selected-video-card-container');
 const selectedVidZero = selectedVidCrdContainer.querySelector('.selected-video-zero');
 
-const profileManagementDrawArea = selectedVidCrdContainer.querySelector('.profile-management-draw-area');
+const profileManagementDrawArea = 
+    selectedVidCrdContainer.querySelector('.profile-management-draw-area');
 
 const profileMgmtForm = document.querySelector('.profile-mgmt-form');
 const formSaveBtn = document.querySelector('.form-save');
@@ -116,3 +119,22 @@ const billingMgmtFormHidden = document.querySelector('.billing-mgmt-form');
 const billingChk = document.querySelector('#billingChk');
 
 const projectManagementComponent = document.querySelector('.project-mgmt-component');
+const projectMgmtCreateBtnContainer = projectManagementComponent.querySelector('.project-mgmt-create-btn-container');
+const projectMgmtCreateBtnContainer2 = projectManagementComponent.querySelector('.project-mgmt-create-btn-container2');
+const createProjectBtn1 = projectMgmtCreateBtnContainer.querySelector('.create-project-btn');
+const projectMagmtMainArea = projectManagementComponent.querySelector('.project_magmt-main-area');
+const createProjectBtn2 = projectMgmtCreateBtnContainer2.querySelector('.create-project-btn');
+const projMgmtForm = projectManagementComponent.querySelector('.create_proj_form');
+const projectList = projectManagementComponent.querySelector('.project-container');
+const projectMgmtProjectDetailContainer = projectManagementComponent.querySelector('.project-mgmt-project-detail-container');
+const selectedProjectDetailContainer = projectManagementComponent.querySelector('.selected-project-detail-container');
+const projNameContent = selectedProjectDetailContainer.querySelector('.proj-name-content');
+const projDescContent = selectedProjectDetailContainer.querySelector('.proj-desc-content');
+const deleteProjBtn = selectedProjectDetailContainer.querySelector('.delete-proj-btn');
+const createTaskBtn = selectedProjectDetailContainer.querySelector('.create-task-btn');
+const projectMgmtProjectTaskContainer = document.querySelector('.project-mgmt-project-task-container');
+const createTaskForm = document.querySelector('.create_task_form');
+const taskDisplayHolder = document.querySelector('.task-display-holder');
+
+
+

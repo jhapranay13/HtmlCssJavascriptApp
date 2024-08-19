@@ -1,0 +1,138 @@
+.project-mgmt-component {
+    border-style: solid;
+    border-color: black;
+    width: 98%;
+    position: relative;
+    height: 98%;
+}
+
+.project-mgmt-sidebar {
+    border-style: solid;
+    background-color: rgb(92, 6, 6);
+    width: 30%;
+    bottom: 0%;
+    height: 100%;
+    position: absolute;
+}
+
+.project_magmt-main-area {
+    margin-left: 31%;
+}
+
+.project-mgmt-sidebar .create-project-btn {
+    background-color: rgb(46, 2, 2);
+    color: white;
+    font-size: 20px;
+    padding: 9px;
+    margin-left: 3%;
+    margin-top: 45%;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+.project-container {
+    list-style: none;
+    background-color: rgb(92, 6, 6);
+    color: white;
+}
+
+.project-container button{
+    background-color: rgb(92, 6, 6);
+    color: white;
+    border-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.project-container button:active{
+    opacity: 0.7;
+}
+
+.project-mgmt-create-btn-container, 
+.project-mgmt-create-btn-container2 {
+    padding-top: 30%;
+    text-align: center;
+}
+
+.project-mgmt-create-btn-container button,
+.project-mgmt-create-btn-container2 button,
+.proj_mgmt_save, .proj_mgmt_reset,
+.delete-proj-btn,
+.create-task-btn,
+.remove-task-btn {
+    background-color: rgb(92, 6, 6);
+    color: white;
+    font-size: 20px;
+    padding: 9px;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.project-mgmt-create-btn-container button:active,
+.project-mgmt-create-btn-container button:active,
+.proj_mgmt_save:active, .proj_mgmt_reset:active,
+.delete-proj-btn:active,
+.create-task-btn:active,
+.remove-task-btn {
+    opacity: 0.7;
+}
+
+.project-mgmt-project-detail-container,
+.project-mgmt-project-task-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    border-radius: 15px;
+    border-style:solid;
+    border-color: brown;
+    margin: 8%;
+    justify-content: center; 
+}
+
+.create_proj_form,
+.create_task_form {
+    margin-top: 0%;
+}
+
+.create_proj_form div,
+.create_task_form div{
+    margin-bottom: 2%;
+}
+
+.create_proj_form textarea,
+.create_task_form textarea{  
+    resize: none;
+    height: 20%;
+    width: 50%;
+}
+
+.proj-form-ctrl {
+    text-align: center;
+}
+
+.selected-project-detail-container {
+    border-style: solid;
+    border-color: brown;
+    margin-top: 10%;
+    margin-right: 2%;
+    padding: 3%;
+}
+
+.proj-name-lbl,
+.proj-desc-lbl {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.task-display-holder {
+    list-style: none
+}
+
+.task-name,
+.task-desc,
+.task-remove {
+    display: inline-block;
+    margin-right: 5%;
+}

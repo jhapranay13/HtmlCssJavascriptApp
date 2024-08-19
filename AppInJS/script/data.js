@@ -193,5 +193,7 @@ const copyDataInit = () => {
 
 let copyUserInfo = copyDataInit();
 
+let projectData = [];
+
 
 
